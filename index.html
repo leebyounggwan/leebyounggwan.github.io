@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1646a4">
+  <meta name="description" content="Academic CV of Byoung Gwan Lee — research interests, peer-reviewed publications, patents and awards.">
+  <title>Byoung Gwan Lee | Academic CV</title>
+  <style>
+    :root {
+      --navy:#12284d;--navy2:#18345d;--blue:#2459c1;--blue2:#2a6ad4;--blue-light:#eaf1ff;
+      --bg:#f6f8fc;--paper:#fff;--text:#1c2b41;--muted:#637187;--line:#e3eaf4;
+      --shadow:0 18px 55px rgba(29,60,112,.07);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:78px}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid #83afff;outline-offset:3px}
+    .topbar{height:5px;background:linear-gradient(90deg,#122b55 0%,#275fd1 55%,#79b2ff 100%)}
+    .nav-outer{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+    .nav-inner{max-width:1180px;margin:auto;padding:0 30px;height:69px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+    .brand{font-weight:800;color:var(--navy);font-size:16px;letter-spacing:-.035em;white-space:nowrap}.brand .dot{color:var(--blue2)}
+    .topnav{display:flex;align-items:center;gap:27px}.topnav a{font-size:12px;font-weight:700;color:#60718a;transition:color .2s}.topnav a:hover,.topnav a.active{color:var(--blue)}
+    .nav-print{background:var(--blue);color:#fff;border:0;padding:9px 13px;border-radius:8px;font-size:12px;font-weight:800;cursor:pointer;white-space:nowrap}.nav-print:hover{background:#1547a9}
+    .page{max-width:1180px;margin:0 auto;padding:52px 30px 90px;display:grid;grid-template-columns:285px minmax(0,1fr);align-items:start;gap:30px}
+    .profile{position:sticky;top:96px;background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:15px;overflow:hidden}
+    .profile-head{padding:34px 28px 28px;background:linear-gradient(157deg,#12284c 0%,#153b7e 100%);color:#fff;position:relative;overflow:hidden}
+    .profile-head::after{content:"";position:absolute;width:190px;height:190px;border:1px solid rgba(154,198,255,.17);border-radius:50%;right:-95px;top:-89px;box-shadow:0 0 0 30px rgba(154,198,255,.035),0 0 0 65px rgba(154,198,255,.025);pointer-events:none}
+    .initials{height:54px;width:54px;border:1px solid #7ba5ea;background:rgba(255,255,255,.09);border-radius:11px;display:grid;place-items:center;color:#fff;font-family:Georgia,serif;font-size:22px;margin-bottom:26px;letter-spacing:-.03em}
+    .profile-head .hint{color:#aecbff;font-weight:750;font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 12px}
+    h1{font-family:Georgia,"Times New Roman",serif;font-size:38px;letter-spacing:-.035em;line-height:1.12;font-weight:500;margin:0 0 14px;position:relative;z-index:1}
+    .position{font-size:13px;line-height:1.7;color:#dbe8ff;margin:0}
+    .profile-body{padding:28px}
+    .detail-label{color:#9caabd;font-weight:800;letter-spacing:.13em;font-size:10px;text-transform:uppercase;margin:0 0 5px}
+    .detail{font-size:13px;color:#30415a;line-height:1.65;margin:0 0 20px}
+    .detail a{overflow-wrap:anywhere}
+    .detail a:hover,.contact-link:hover{color:var(--blue)}
+    .contact-link{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;color:var(--blue);margin:10px 0;overflow-wrap:anywhere}
+    .contact-link svg{flex:none}
+    .profile-note{border-top:1px solid var(--line);padding:17px 28px;background:#fbfcff;color:#8090a6;font-size:11px}
+    .content{min-width:0}
+    .hero{padding:35px 42px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);margin-bottom:20px;position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;width:5px;left:0;top:0;bottom:0;background:var(--blue)}
+    .overline{margin:0 0 10px;font-size:11px;font-weight:800;letter-spacing:.18em;color:var(--blue);text-transform:uppercase}
+    .hero h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(25px,3.1vw,37px);line-height:1.25;letter-spacing:-.028em;font-weight:500;margin:0 0 16px;color:var(--navy)}
+    .hero h2 em{font-style:normal;color:var(--blue)}
+    .hero p:last-child{margin:0;color:var(--muted);font-size:14px;max-width:620px}
+    .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:20px}
+    .stat{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:19px 22px;box-shadow:0 8px 28px rgba(25,58,107,.03)}
+    .stat strong{color:var(--blue);font-size:28px;line-height:1;font-weight:750;letter-spacing:-.05em}.stat span{font-size:11px;color:#677991;font-weight:700;line-height:1.4}
+    .section{background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);padding:31px 39px 34px;margin:0 0 20px;scroll-margin-top:90px}
+    .section-title{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:23px;border-bottom:1px solid var(--line);margin-bottom:22px}
+    .title-left{display:flex;align-items:center;gap:14px;min-width:0}
+    .section-num{font-size:11px;font-weight:850;color:#3573d4;letter-spacing:.07em;align-self:flex-start;padding-top:3px}
+    h3{font-size:21px;letter-spacing:-.035em;color:var(--navy);line-height:1.3;margin:0;font-weight:800}
+    .section-sub{color:#9cabc0;font-size:11px;font-weight:750;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+    .interest-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+    .interest{border:1px solid #e1eaf8;background:#f8faff;border-radius:9px;display:flex;align-items:center;gap:12px;min-height:69px;padding:13px 17px;font-size:13px;font-weight:650;color:#2d466b}
+    .interest::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--blue2);box-shadow:0 0 0 5px #e5efff;flex:none;margin-right:4px}
+    .pub-tools{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin:-3px 0 11px}
+    .filters{display:flex;gap:7px;flex-wrap:wrap}
+    .filter{border:1px solid #dce6f4;background:#fff;color:#627590;padding:7px 12px;border-radius:7px;font-size:11px;font-weight:800;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+    .filter[aria-pressed="true"]{color:#fff;background:var(--blue);border-color:var(--blue)}.filter:hover:not([aria-pressed="true"]){color:var(--blue);border-color:#adc8ff}
+    .small-meta{font-size:11px;color:#9aa8b9}
+    .pub-list{margin-top:8px}
+    .pub{display:grid;grid-template-columns:53px minmax(0,1fr);gap:13px;border-bottom:1px solid #e9eef6;padding:23px 0}
+    .pub[hidden]{display:none}
+    .pub:first-child{padding-top:10px}.pub:last-child{border-bottom:0;padding-bottom:6px}
+    .pub-year{font-size:12px;color:#6f86a8;font-weight:850;letter-spacing:-.02em;padding-top:3px}
+    .pub h4{margin:0 0 8px;font-size:14px;line-height:1.52;color:#223654;font-weight:800;letter-spacing:-.013em}
+    .pub h4 a:hover{color:var(--blue)}.authors{font-size:11.5px;line-height:1.75;color:#66788e;margin:0 0 8px}.me{color:#244eaa;font-weight:850}
+    .pub-end{display:flex;align-items:center;flex-wrap:wrap;gap:8px 10px}.journal{color:#315c9a;font-style:italic;font-weight:750;font-size:12px}.pub-detail{color:#75869c;font-size:11px}
+    .tag{display:inline-flex;align-items:center;border-radius:4px;font-size:10px;font-weight:800;letter-spacing:.01em;padding:3px 7px;background:#edf3ff;color:#285db7}
+    .tag.ink{background:#eef1f5;color:#566779}.tag.gold{background:#fff5df;color:#906118}
+    .doi{font-size:11px;font-weight:850;color:var(--blue);white-space:nowrap}.doi:hover{text-decoration:underline}
+    .patent{display:grid;grid-template-columns:61px minmax(0,1fr);gap:13px;padding:10px 0 20px}
+    .patent + .patent{border-top:1px solid var(--line);padding-top:22px}
+    .patent h4{font-size:14px;line-height:1.55;margin:0 0 6px;color:#243652}.patent .en{font-size:11.5px;color:#637791;line-height:1.6;margin:0 0 7px}
+    .patent-meta{font-size:11px;font-weight:650;color:#687c98}
+    .caution{background:#f6f9ff;color:#5f7291;padding:12px 14px;border-left:3px solid #84adf0;font-size:11px;line-height:1.65;margin-top:15px;border-radius:0 6px 6px 0}
+    .award{display:grid;grid-template-columns:60px minmax(0,1fr);gap:14px;padding:18px 0;border-bottom:1px solid #e9eef6}.award:first-child{padding-top:2px}.award:last-child{border:0;padding-bottom:4px}
+    .award .year{font-size:12px;font-weight:850;color:#6680a5;padding-top:2px}
+    .award h4{font-size:14px;color:#223654;line-height:1.5;margin:0 0 4px}.award p{font-size:11.5px;color:#66788e;margin:0}
+    .footer{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;color:#92a0b4;font-size:11px;padding:8px 2px 0}.footer a{color:#5879b4}.footer a:hover{text-decoration:underline}
+    @media(max-width:1020px){.page{grid-template-columns:245px minmax(0,1fr);gap:20px}.profile-head{padding:28px 23px}.profile-body{padding:23px}.profile-note{padding:17px 23px}.section{padding:26px}.hero{padding:28px}.stat{padding:18px;gap:10px}.stat strong{font-size:25px}}
+    @media(max-width:760px){html{scroll-padding-top:70px}.topnav{gap:15px}.nav-inner{padding:0 20px;height:60px}.nav-print{display:none}.page{display:block;padding:22px 18px 60px}.profile{position:static;margin-bottom:18px}.profile-head{padding:25px}.profile-body{padding:18px 25px;display:grid;grid-template-columns:1fr 1fr;column-gap:10px}.profile-note{padding:14px 25px}.initials{margin-bottom:14px;width:45px;height:45px}.profile-head h1{font-size:36px}.hero{padding:27px}.section{padding:23px}.stats{gap:9px}.stat{flex-direction:column;align-items:flex-start;padding:15px}.stat strong{font-size:25px}.topnav a{font-size:11px}}
+    @media(max-width:520px){.topnav{gap:9px}.topnav a{font-size:10px}.brand{font-size:13px}.nav-inner{padding:0 12px;gap:8px}.profile-body{display:block}.detail{margin-bottom:12px}.hero h2{font-size:28px}.interest-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat{padding:13px 11px}.stat span{font-size:10px}.section-title{align-items:center}.section-sub{display:none}.pub{grid-template-columns:43px minmax(0,1fr);gap:6px}.patent,.award{grid-template-columns:49px minmax(0,1fr);gap:6px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{*{box-shadow:none!important}html{scroll-behavior:auto}body{background:#fff;color:#000;font-size:11px}.topbar,.nav-outer,.nav-print,.filters{display:none!important}.page{padding:0;display:block;max-width:none}.profile{position:static;border:0;border-radius:0;box-shadow:none;margin:0 0 18px;display:block}.profile-head{background:#fff!important;color:#111;padding:0 0 10px}.profile-head::after,.initials,.profile-head .hint{display:none}.profile-head h1{font-size:28px;color:#153b7e;margin-bottom:3px}.position{color:#555}.profile-body{padding:0;display:flex;flex-wrap:wrap;gap:8px 30px}.detail-label{display:none}.detail{margin:0}.contact-link{margin:0;color:#335b90}.profile-note{display:none}.hero,.section{border:0;border-radius:0;padding:0;box-shadow:none;margin-bottom:24px}.hero{margin-bottom:20px}.hero::before{display:none}.hero h2{font-size:20px}.stats{display:none}.section-title{padding-bottom:6px;margin-bottom:9px;border-bottom:1px solid #b6c4da}h3{font-size:16px}.pub{padding:9px 0;break-inside:avoid}.interest{min-height:0;padding:7px 12px}.award,.patent{break-inside:avoid;padding:8px 0}.footer{padding-top:12px}a{text-decoration:none}}
+  </style>
+</head>
+<body>
+<div class="topbar" aria-hidden="true"></div>
+<header class="nav-outer">
+  <div class="nav-inner">
+    <a class="brand" href="#top">BG LEE<span class="dot">.</span></a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#interests">Interests</a><a href="#publications">Publications</a><a href="#patents">Patents</a><a href="#awards">Awards</a>
+    </nav>
+    <button type="button" class="nav-print" onclick="window.print()" title="Use the browser print dialog to save a PDF">Print / PDF ↗</button>
+  </div>
+</header>
+<div class="page" id="top">
+  <aside class="profile" aria-label="Personal profile">
+    <div class="profile-head">
+      <div class="initials" aria-hidden="true">BL</div>
+      <p class="hint">Academic Curriculum Vitae</p>
+      <h1>Byoung Gwan<br>Lee<span style="color:#8bbdff">.</span></h1>
+      <p class="position">Graduate Researcher in Chemistry<br>Yonsei University, Republic of Korea</p>
+    </div>
+    <div class="profile-body">
+      <div><p class="detail-label">Affiliation</p><p class="detail">Department of Chemistry and Medical Chemistry<br>Yonsei University (Mirae Campus)</p></div>
+      <div><p class="detail-label">Location</p><p class="detail">Wonju, Republic of Korea</p></div>
+      <div>
+        <p class="detail-label">Contact &amp; profiles</p>
+        <a class="contact-link" href="mailto:leebyounggwan@yonsei.ac.kr" aria-label="Email Byoung Gwan Lee">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Email ↗
+        </a>
+        <a class="contact-link" href="https://orcid.org/0009-0008-9360-7771" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 9v6M8.5 6.5h.01M11.5 15V9h2a3 3 0 0 1 0 6z"/></svg>
+          ORCID <span style="font-weight:500;font-size:11px">0009-0008-9360-7771</span> ↗
+        </a>
+      </div>
+    </div>
+    <div class="profile-note">Personal academic portfolio · Updated Nov 2026</div>
+  </aside>
+  <main class="content">
+    <div class="hero">
+      <p class="overline">Materials Chemistry / Porous Frameworks</p>
+      <h2>Exploring <em>structure–property relationships</em> in functional porous materials.</h2>
+      <p>My research focuses on the design and characterization of metal–organic and hydrogen-bonded frameworks for gas adsorption, structural transformation, ion conduction, and catalysis.</p>
+    </div>
+    <div class="stats" aria-label="At a glance">
+      <div class="stat"><strong>07</strong><span>Peer-reviewed<br>publications</span></div>
+      <div class="stat"><strong>04</strong><span>Lead / equal-<br>contribution papers</span></div>
+      <div class="stat"><strong>03</strong><span>Individual<br>awards</span></div>
+    </div>
+    <section class="section" id="interests" aria-labelledby="interests-heading">
+      <div class="section-title"><div class="title-left"><span class="section-num">01</span><h3 id="interests-heading">Research Interests</h3></div><span class="section-sub">Focus areas</span></div>
+      <div class="interest-grid">
+        <div class="interest">Metal–Organic Frameworks (MOFs)</div>
+        <div class="interest">Hydrogen-Bonded Frameworks (HOFs)</div>
+        <div class="interest">Gas Adsorption &amp; Structural Dynamics</div>
+        <div class="interest">Proton Conduction &amp; Catalysis</div>
+      </div>
+    </section>
+    <section class="section" id="publications" aria-labelledby="publications-heading">
+      <div class="section-title"><div class="title-left"><span class="section-num">02</span><h3 id="publications-heading">Publications</h3></div><span class="section-sub">2024 — 2026</span></div>
+      <div class="pub-tools"><div class="filters" role="group" aria-label="Filter publications"><button type="button" class="filter" data-filter="all" aria-pressed="true">All (7)</button><button type="button" class="filter" data-filter="lead" aria-pressed="false">Lead / Equal contribution (4)</button></div><span class="small-meta" id="pub-count">7 publications</span></div>
+      <div class="pub-list">
+        <article class="pub" data-lead="yes"><div class="pub-year">2026</div><div>
+          <h4><a href="https://doi.org/10.1002/cssc.71172" target="_blank" rel="noopener noreferrer">Balancing Porosity and Binding Affinity in Vinyl-Functionalized Zr-based Metal-Organic Frameworks for Gas Adsorption</a></h4>
+          <p class="authors"><span class="me">Byoung Gwan Lee</span>, Eun-Sol Choi, Sejin Park, Seunghee Han, Jihan Kim, Dongwook Kim, Hyunchul Oh, Hyo-Jun Lee, Dae-Woon Lim</p>
+          <div class="pub-end"><span class="journal">ChemSusChem</span><span class="tag">First author</span><a class="doi" href="https://doi.org/10.1002/cssc.71172" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+        </div></article>
+        <article class="pub" data-lead="no"><div class="pub-year">2026</div><div>
+          <h4><a href="https://doi.org/10.1002/advs.75420" target="_blank" rel="noopener noreferrer">Giant Conductivity Modulation and Chemically Tunable Synaptic Plasticity in a De-doped Mixed Protonic–Electronic Conductor</a></h4>
+          <p class="authors">Kwangmin Park, Jumin Park, Huiyeong Ju, Nasim Arafat, <span class="me">Byoung Gwan Lee</span>, Joohee Oh, Hyunseob Lim, Seok Min Yoon, Dae-Woon Lim, Intek Song</p>
+          <div class="pub-end"><span class="journal">Advanced Science</span><span class="pub-detail">e75420</span><a class="doi" href="https://doi.org/10.1002/advs.75420" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+        </div></article>
+        <article class="pub" data-lead="yes"><div class="pub-year">2025</div><div>
+          <h4><a href="https://doi.org/10.1039/D5CE00639B" target="_blank" rel="noopener noreferrer">Coordinated Water Modulation for Proton Conductivity via Post-synthetic Transmetalation in Yttrium-Based Coordination Polymer</a></h4>
+          <p class="authors"><span class="me">Byoung Gwan Lee</span>, Dongwook Kim, Jin Young Bae, Ji Woo Jeong, Dae-Woon Lim</p>
+          <div class="pub-end"><span class="journal">CrystEngComm</span><span class="pub-detail">27, 5952–5958</span><span class="tag">First author</span><span class="tag gold">Editors’ Choice</span><a class="doi" href="https://doi.org/10.1039/D5CE00639B" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+        </div></article>
+        <article class="pub" data-lead="yes"><div class="pub-year">2025</div><div>
+          <h4><a href="https://doi.org/10.1021/acs.cgd.5c00886" target="_blank" rel="noopener noreferrer">Enhancement of Mobile Protons Induced by Ammonia in Isostructural Hydrogen-Bonded Organic Frameworks</a></h4>
+          <p class="authors">Jin Young Bae<sup>‡</sup>, <span class="me">Byoung Gwan Lee<sup>‡</sup></span>, Dongwook Kim, Ken-ichi Otake, Yusuke Nishiyama, Dae-Woon Lim</p>
+          <div class="pub-end"><span class="journal">Crystal Growth &amp; Design</span><span class="pub-detail">25, 8332–8338</span><span class="tag">Equal contribution ‡</span><span class="tag gold">Supplementary Cover</span><a class="doi" href="https://doi.org/10.1021/acs.cgd.5c00886" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+        </div></article>
+        <article class="pub" data-lead="no"><div class="pub-year">2025</div><div>
+          <h4><a href="https://doi.org/10.1021/acsenergylett.4c03299" target="_blank" rel="noopener noreferrer">Intermediate Temperature Superprotonic Conductivity beyond 10⁻² S cm⁻¹ with Low Proton Transfer Energy Barrier in a MOF</a></h4>
+          <p class="authors">Debolina Mukherjee, Shyam Chand Pal, Yasaswini Oruganti, <span class="me">Byoung Gwan Lee</span>, Arun K. Manna, Dae-Woon Lim, Madhab C. Das</p>
+          <div class="pub-end"><span class="journal">ACS Energy Letters</span><span class="pub-detail">10, 1216–1228</span><a class="doi" href="https://doi.org/10.1021/acsenergylett.4c03299" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+        </div></article>
+        <article class="pub" data-lead="no"><div class="pub-year">2024</div><div>
+          <h4><a href="https://doi.org/10.1021/acs.chemmater.4c02368" target="_blank" rel="noopener noreferrer">Machine Learning Based Prediction of Proton Conductivity in Metal-Organic Frameworks</a></h4>
+          <p class="authors">Seunghee Han, <span class="me">Byoung Gwan Lee</span>, Dae-Woon Lim, Jihan Kim</p>
+          <div class="pub-end"><span class="journal">Chemistry of Materials</span><span class="pub-detail">36, 11280–11287</span><a class="doi" href="https://doi.org/10.1021/acs.chemmater.4c02368" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+        </div></article>
+        <article class="pub" data-lead="yes"><div class="pub-year">2024</div><div>
+          <h4><a href="https://doi.org/10.1021/jacs.4c01113" target="_blank" rel="noopener noreferrer">Room Temperature Superprotonic Conductivity beyond 10⁻¹ S cm⁻¹ in Co(II) Coordination Polymer</a></h4>
+          <p class="authors">Shyam Chand Pal<sup>‡</sup>, Debolina Mukherjee<sup>‡</sup>, Yasaswini Oruganti<sup>‡</sup>, <span class="me">Byoung Gwan Lee<sup>‡</sup></span>, Dae-Woon Lim, Bikram Pramanik, Arun Manna, Madhab C. Das</p>
+          <div class="pub-end"><span class="journal">Journal of the American Chemical Society</span><span class="pub-detail">146, 14546–14557</span><span class="tag">Equal contribution ‡</span><a class="doi" href="https://doi.org/10.1021/jacs.4c01113" target="_blank" rel="noopener noreferrer">DOI ↗</a></div>
+        </div></article>
+      </div>
+    </section>
+    <section class="section" id="patents" aria-labelledby="patents-heading">
+      <div class="section-title"><div class="title-left"><span class="section-num">03</span><h3 id="patents-heading">Patents</h3></div><span class="section-sub">Research-related</span></div>
+      <div class="patent"><div class="pub-year">2026</div><div><h4>이트륨 기반 금속 유기 골격체의 금속 이온 교환을 통한 양성자 전도체 개발</h4><p class="en">Development of proton conductors through metal-ion exchange in yttrium-based metal–organic frameworks</p><p class="patent-meta">Korean application no. 10-2026-0108624 · Filed 15 Jun 2026</p></div></div>
+      <div class="patent"><div class="pub-year">2026</div><div><h4>금속-유기골격체에 암모늄염을 포함하는 양성자 전도체 및 이를 이용한 복합 전해질 막과 연료전지 및 이의 제조방법</h4><p class="en">MOF-based proton conductor containing ammonium salts and related composite membranes and fuel cells</p><p class="patent-meta">Korean application no. 10-2026-0029847 · Filed 13 Feb 2026</p></div></div>
+      <div class="caution"><strong>Verification note:</strong> These are relevant entries from the research group's patent list. Individual inventor attribution has not yet been confirmed; confirm before presenting them as personal patents in an official CV.</div>
+    </section>
+    <section class="section" id="awards" aria-labelledby="awards-heading">
+      <div class="section-title"><div class="title-left"><span class="section-num">04</span><h3 id="awards-heading">Honors &amp; Awards</h3></div><span class="section-sub">Selected distinctions</span></div>
+      <div class="award"><span class="year">2026</span><div><h4>Governor of Gangwon State Award (Excellence Award)</h4><p>Organized by the Korea Institute of Energy Technology Evaluation and Planning · Aug 2026</p></div></div>
+      <div class="award"><span class="year">2026</span><div><h4>Outstanding Graduate Student Paper Award</h4><p>Jan 2026</p></div></div>
+      <div class="award"><span class="year">2025</span><div><h4>Best Poster Award</h4><p>Fall Symposium, Gangwon Division of the Korean Chemical Society · Oct 2025</p></div></div>
+    </section>
+    <footer class="footer"><span>© <span id="copyright-year">2026</span> Byoung Gwan Lee · Academic CV</span><a href="https://sites.google.com/view/lim-research-group/home" target="_blank" rel="noopener noreferrer">Source: Lim Research Group ↗</a></footer>
+  </main>
+</div>
+<script>
+  document.querySelectorAll('.filter').forEach(button=>{
+    button.addEventListener('click',()=>{
+      const filter=button.dataset.filter;
+      document.querySelectorAll('.filter').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+      let count=0;
+      document.querySelectorAll('.pub').forEach(pub=>{const visible=filter==='all'||pub.dataset.lead==='yes';pub.hidden=!visible;if(visible)count++;});
+      document.getElementById('pub-count').textContent=count+' publications';
+    });
+  });
+  // Highlight the visible section in the top navigation.
+  if('IntersectionObserver' in window){
+    const links=[...document.querySelectorAll('.topnav a')];
+    const observer=new IntersectionObserver(entries=>{
+      for(const entry of entries){if(entry.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+entry.target.id));}}
+    },{rootMargin:'-25% 0px -65% 0px'});
+    document.querySelectorAll('main section[id]').forEach(s=>observer.observe(s));
+  }
+</script>
+</body>
+</html>
